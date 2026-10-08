@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог электроники TechStore: смартфоны, ноутбуки, аксессуары">
+  <title>Каталог — TechStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">TechStore</a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="catalog.html" class="nav__link nav__link--active">Каталог</a></li>
+          <li class="nav__item"><a href="order.html" class="nav__link">Заказ</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title" style="text-align: left; margin-bottom: var(--spacing-lg);">Каталог электроники</h1>
+        
+        <div class="catalog-layout">
+          <!-- БЛОК ФИЛЬТРОВ (ASIDE) -->
+          <aside class="filters">
+            <h2 class="filters__title">Фильтры</h2>
+            <form class="filters__form" action="#" method="get">
+              
+              <!-- Категория -->
+              <div class="filters__group">
+                <span class="filters__group-title">Категория</span>
+                <div class="filters__item">
+                  <input type="checkbox" id="cat-smartphones" name="category" value="smartphones" checked>
+                  <label for="cat-smartphones">Смартфоны</label>
+                </div>
+                <div class="filters__item">
+                  <input type="checkbox" id="cat-laptops" name="category" value="laptops">
+                  <label for="cat-laptops">Ноутбуки</label>
+                </div>
+                <div class="filters__item">
+                  <input type="checkbox" id="cat-audio" name="category" value="audio">
+                  <label for="cat-audio">Аудио</label>
+                </div>
+              </div>
+
+              <!-- Бренд -->
+              <div class="filters__group">
+                <span class="filters__group-title">Бренд</span>
+                <div class="filters__item">
+                  <input type="checkbox" id="brand-apple" name="brand" value="apple">
+                  <label for="brand-apple">Apple</label>
+                </div>
+                <div class="filters__item">
+                  <input type="checkbox" id="brand-samsung" name="brand" value="samsung">
+                  <label for="brand-samsung">Samsung</label>
+                </div>
+                <div class="filters__item">
+                  <input type="checkbox" id="brand-sony" name="brand" value="sony">
+                  <label for="brand-sony">Sony</label>
+                </div>
+              </div>
+
+              <!-- Цена -->
+              <div class="filters__group">
+                <span class="filters__group-title">Цена, ₽</span>
+                <div class="filters__price-row">
+                  <input type="number" class="filters__input" placeholder="От" name="price_min">
+                  <input type="number" class="filters__input" placeholder="До" name="price_max">
+                </div>
+              </div>
+
+              <button type="submit" class="btn filters__btn">Применить</button>
+            </form>
+          </aside>
+
+          <!-- СЕТКА ТОВАРОВ -->
+          <div class="products__grid">
+            
+            <article class="product-card">
+              <span class="product-card__badge">Хит</span>
+              <img src="https://via.placeholder.com/300x200/2563eb/ffffff?text=Smartphone" alt="Смартфон Pro X" class="product-card__image">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Смартфон Pro X</h3>
+                <p class="product-card__description">Флагманский смартфон с AMOLED-экраном.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">59 990 ₽</span>
+                  <a href="product.html" class="btn">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="product-card__badge">Новинка</span>
+              <img src="https://via.placeholder.com/300x200/7c3aed/ffffff?text=Laptop" alt="Ноутбук Ultra 15" class="product-card__image">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Ноутбук Ultra 15</h3>
+                <p class="product-card__description">Мощный ноутбук для работы и игр.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">89 990 ₽</span>
+                  <a href="product.html" class="btn">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="https://via.placeholder.com/300x200/f97316/ffffff?text=Headphones" alt="Наушники Sound Max" class="product-card__image">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Наушники Sound Max</h3>
+                <p class="product-card__description">Беспроводные наушники с шумоподавлением.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">12 490 ₽</span>
+                  <a href="product.html" class="btn">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="product-card__badge">-20%</span>
+              <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Watch" alt="Смарт-часы Fit Pro" class="product-card__image">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Смарт-часы Fit Pro</h3>
+                <p class="product-card__description">Фитнес-трекер с GPS и мониторингом.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">15 990 ₽</span>
+                  <a href="product.html" class="btn">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img src="https://via.placeholder.com/300x200/ef4444/ffffff?text=Tablet" alt="Планшет Air Tab" class="product-card__image">
+              <div class="product-card__content">
+                <h3 class="product-card__title">Планшет Air Tab</h3>
+                <p class="product-card__description">Лёгкий планшет для чтения и видео.</p>
+                <div class="product-card__footer">
+                  <span class="product-card__price">24 990 ₽</span>
+                  <a href="product.html" class="btn">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 TechStore. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Смартфон Pro X - подробные характеристики и описание">
+  <title>Смартфон Pro X — TechStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">TechStore</a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="order.html" class="nav__link">Заказ</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="product-detail">
+          <!-- ГАЛЕРЕЯ -->
+          <div class="product-detail__gallery">
+            <img src="https://via.placeholder.com/600x400/2563eb/ffffff?text=Smartphone+Pro+X" alt="Смартфон Pro X - вид спереди" class="product-detail__main-image">
+            <div class="product-detail__thumbs">
+              <img src="https://via.placeholder.com/150x150/2563eb/ffffff?text=Front" alt="Вид спереди" class="product-detail__thumb">
+              <img src="https://via.placeholder.com/150x150/1d4ed8/ffffff?text=Back" alt="Вид сзади" class="product-detail__thumb">
+              <img src="https://via.placeholder.com/150x150/7c3aed/ffffff?text=Side" alt="Вид сбоку" class="product-detail__thumb">
+            </div>
+          </div>
+
+          <!-- ИНФОРМАЦИЯ О ТОВАРЕ -->
+          <div class="product-detail__info">
+            <h1 class="product-detail__title">Смартфон Pro X</h1>
+            <div class="product-detail__price">59 990 ₽</div>
+            <p class="product-detail__description">
+              Флагманский смартфон с потрясающим AMOLED-экраном 120 Гц, тройной камерой 108 МП и мощным процессором последнего поколения. Идеален для мобильных игр и профессиональной фотографии.
+            </p>
+            <button class="btn btn--accent js-open-modal">Оформить заявку</button>
+
+            <!-- ТАБЛИЦА ХАРАКТЕРИСТИК -->
+            <table class="specs-table">
+              <caption>Технические характеристики</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Параметр</th>
+                  <th scope="col">Значение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Экран</th>
+                  <td>6.7" AMOLED, 120 Гц</td>
+                </tr>
+                <tr>
+                  <th scope="row">Процессор</th>
+                  <td>8-ядерный, 3.2 ГГц</td>
+                </tr>
+                <tr>
+                  <th scope="row">Оперативная память</th>
+                  <td>12 ГБ</td>
+                </tr>
+                <tr>
+                  <th scope="row">Встроенная память</th>
+                  <td>256 ГБ</td>
+                </tr>
+                <tr>
+                  <th scope="row">Основная камера</th>
+                  <td>108 МП + 12 МП + 5 МП</td>
+                </tr>
+                <tr>
+                  <th scope="row">Аккумулятор</th>
+                  <td>5000 мАч</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- МОДАЛЬНОЕ ОКНО -->
+  <div class="modal" id="orderModal">
+    <div class="modal__content">
+      <button class="modal__close js-close-modal" aria-label="Закрыть окно">&times;</button>
+      <h2 class="modal__title">Заявка оформляется</h2>
+      <p>Вы выбрали: <strong>Смартфон Pro X</strong></p>
+      <p style="margin-top: 16px; color: var(--color-text-light); font-size: var(--font-size-sm);">
+        Менеджер свяжется с вами в течение 15 минут для подтверждения заказа.
+      </p>
+      <button class="btn btn--accent" style="width: 100%; margin-top: 24px;">Отлично, жду звонка</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 TechStore. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

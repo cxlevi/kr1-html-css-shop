@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Оформление заказа в интернет-магазине TechStore">
+  <title>Оформление заказа — TechStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">TechStore</a>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="order.html" class="nav__link nav__link--active">Заказ</a></li>
+          <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">Оформление заявки</h1>
+        
+        <form class="order-form" action="#" method="POST">
+          
+          <div class="order-form__group">
+            <label for="name" class="order-form__label">Ваше имя *</label>
+            <input type="text" id="name" name="name" class="order-form__input" placeholder="Иван Иванов" required>
+          </div>
+
+          <div class="order-form__group">
+            <label for="email" class="order-form__label">E-mail *</label>
+            <input type="email" id="email" name="email" class="order-form__input" placeholder="example@mail.com" required>
+          </div>
+
+          <div class="order-form__group">
+            <label for="phone" class="order-form__label">Телефон *</label>
+            <input type="tel" id="phone" name="phone" class="order-form__input" placeholder="+7 (999) 000-00-00" required>
+          </div>
+
+          <div class="order-form__group">
+            <label for="topic" class="order-form__label">Тема обращения / Товар *</label>
+            <select id="topic" name="topic" class="order-form__select" required>
+              <option value="" disabled selected>Выберите из списка</option>
+              <option value="smartphone">Смартфон Pro X</option>
+              <option value="laptop">Ноутбук Ultra 15</option>
+              <option value="headphones">Наушники Sound Max</option>
+              <option value="other">Другой вопрос</option>
+            </select>
+          </div>
+
+          <div class="order-form__group">
+            <label for="comment" class="order-form__label">Комментарий</label>
+            <textarea id="comment" name="comment" class="order-form__textarea" placeholder="Укажите адрес доставки или дополнительные пожелания"></textarea>
+          </div>
+
+          <div class="order-form__group order-form__checkbox-group">
+            <input type="checkbox" id="consent" name="consent" class="order-form__checkbox" required>
+            <label for="consent" class="order-form__checkbox-label">
+              Я даю согласие на обработку моих персональных данных *
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn--accent order-form__submit">Отправить заявку</button>
+          
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 TechStore. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
